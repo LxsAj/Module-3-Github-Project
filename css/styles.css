@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top:0;
+  background-color: white;
+    box-shadow: 0 20px 28px rgba(8, 21, 65, 0.25);
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar img{
+    width: 100px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
+
+.link-icon{
+display: none;
+}
+
+#navbar ul li a:hover {
+  background: red;
+  color: white;
+  border-radius: 5px;
+}
+
+#teams h1 {
+    padding-top: 90px;
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-weight:bolder;
+}
+
+#teams p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.drivers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.card{
+  padding: 2px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 20%;
+  border-radius: 5px;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 600px){
+    #navbar ul li a{
+        display: none;
+    }
+
+    .link-icon{
+        display: inline;
+        max-height: 25px;
+        max-width: 25px;
+    }
+
+    #teams h1{
+        font-size: 50px;
+    }
+
+    .card{
+      width: 40%;
+    }
+
+}
